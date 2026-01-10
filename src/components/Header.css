@@ -1,0 +1,58 @@
+/* =========================================
+   Navbar (header container)
+   ========================================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+  box-shadow: 0 2px 6px var(--color-shadow-soft); /* Using soft shadow from global */
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* =========================================
+   Logo / Branding
+   ========================================= */
+.navbar-logo {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--color-text-strong);
+  user-select: none;
+}
+
+/* =========================================
+   Navigation links
+   ========================================= */
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    color var(--transition-fast),
+    border-bottom-color var(--transition-fast);
+
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.navbar-links a:hover {
+  color: var(--color-text);
+}
+
+.navbar-links .active {
+  color: var(--color-accent); /* Using primary accent for active link */
+  border-bottom-color: var(--color-accent-blue);
+}

@@ -1,0 +1,105 @@
+/* ===============================
+   Page Content General Styling
+   =============================== */
+.page-content {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 2rem auto; /* Adjusted margin to give space from header/footer */
+  width: 100%;
+  flex-grow: 1; /* Allow content to grow and push footer down */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-content h1 {
+  font-size: 2.5rem;
+  color: var(--color-text-strong);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.page-content ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.page-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.page-content ul li a {
+  color: var(--color-accent-blue);
+  text-decoration: none;
+}
+
+.page-content ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ===============================
+   Hero Section Specifics
+   =============================== */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh; /* Make hero section tall */
+  padding: 3rem 0;
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-lg);
+  margin-top: 2rem;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-strong);
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  color: var(--color-text-muted);
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+.hero-section .button-primary {
+  background-color: var(--color-accent);
+  color: var(--color-bg);
+  border: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.1rem;
+  transition: background-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.hero-section .button-primary:hover {
+  background-color: var(--color-accent-hover);
+  transform: translateY(-2px);
+}
+
+
+/* ===============================
+   Projects Grid Specifics
+   =============================== */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}

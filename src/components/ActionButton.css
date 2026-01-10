@@ -1,0 +1,96 @@
+/* =========================================
+   Action Button
+   ========================================= */
+
+/* ---------- Base Container ---------- */
+.action-button {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---------- Button ---------- */
+.action-button__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 1 / 1;
+  padding: 1.1rem;
+
+  border-radius: var(--radius-lg);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+  background: color-mix(in srgb, var(--color-accent) 15%, transparent);
+  color: color-mix(in srgb, var(--color-accent) 85%, var(--color-text));
+
+  font-size: 1.6rem;
+  cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.action-button__btn:hover {
+  background: var(--color-accent);
+  color: var(--color-text-strong);
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px
+    color-mix(in srgb, var(--color-accent) 28%, black);
+}
+
+/* ---------- Focus Ring ---------- */
+.action-button__btn:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px
+    color-mix(in srgb, var(--color-accent) 40%, transparent);
+}
+
+/* ---------- Tooltip ---------- */
+.action-button__tooltip {
+  position: absolute;
+  bottom: -2.6rem;
+
+  background: var(--color-surface-alt);
+  color: var(--color-text);
+  font-size: 0.85rem;
+
+  padding: 0.35rem 0.6rem;
+  border-radius: var(--radius-sm);
+
+  white-space: nowrap;
+  pointer-events: none;
+
+  opacity: 0;
+  transform: translateY(4px);
+  transition:
+    opacity var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+/* Show tooltip on hover AND keyboard focus */
+.action-button:hover .action-button__tooltip,
+.action-button:focus-within .action-button__tooltip {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Tooltip arrow */
+.action-button__tooltip::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  border-width: 4px;
+  border-style: solid;
+  border-color:
+    transparent
+    transparent
+    var(--color-surface-alt)
+    transparent;
+}
