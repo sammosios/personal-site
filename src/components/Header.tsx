@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 import { profile } from '@/user';
+import { pages } from '@/pages';
 
 const Header = () => {
   return (
@@ -10,18 +11,18 @@ const Header = () => {
       </div>
 
       <nav className="navbar-links">
-        <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
-          Home
-        </NavLink>
-        <NavLink to="/about" className={({ isActive }) => (isActive ? 'active' : '')}>
-          About
-        </NavLink>
-        <NavLink to="/projects" className={({ isActive }) => (isActive ? 'active' : '')}>
-          Projects
-        </NavLink>
-        <NavLink to="/contact" className={({ isActive }) => (isActive ? 'active' : '')}>
-          Contact
-        </NavLink>
+        {pages
+          .filter((page) => page.nav !== false)
+          .map(({ id, path, label }) => (
+            <NavLink
+              key={id}
+              to={path}
+              end={path === '/'}
+              className={({ isActive }) => (isActive ? 'active' : '')}
+            >
+              {label}
+            </NavLink>
+          ))}
       </nav>
     </header>
   );

@@ -1,4 +1,4 @@
-import type { ProjectsData } from '@/pages/Projects.schema';
+import type { ProjectsData } from '@/pages/Projects/Projects.schema';
 
 export const projectsData: ProjectsData = {
   title: 'My Projects',

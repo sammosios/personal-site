@@ -1,5 +1,5 @@
 import { PersonStanding, FileCodeCorner, MailIcon } from 'lucide-react';
-import type { HomeData } from '@/pages/Home.schema';
+import type { HomeData } from '@/pages/Home/Home.schema';
 
 export const homeData: HomeData = {
   heading: "Hi, I'm Βίσων 🦬",

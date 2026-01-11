@@ -1,4 +1,4 @@
-import type { ContactData } from '@/pages/Contact.schema';
+import type { ContactData } from '@/pages/Contact/Contact.schema';
 
 export const contactData: ContactData = {
   title: 'Contact Me',

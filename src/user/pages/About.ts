@@ -1,4 +1,4 @@
-import type { AboutData } from '@/pages/About.schema';
+import type { AboutData } from '@/pages/About/About.schema';
 
 export const aboutData: AboutData = {
   title: 'About Me',
