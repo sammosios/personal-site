@@ -22,18 +22,18 @@ export interface UserProfile {
 }
 
 export const profile: UserProfile = {
-  name: 'Βίσων',
+  name: 'Sam Mosios',
   role: 'Distributed Systems Engineer',
   tagline: 'I build things that occasionally work.',
 
   contact: {
-    email: 'you@example.com',
+    email: 'sam.mosios@gmail.com',
     location: 'Stockholm, SE',
   },
 
   socials: {
-    github: 'https://github.com/username',
-    linkedin: 'https://linkedin.com/in/username',
+    github: 'https://github.com/sammosios',
+    linkedin: 'https://linkedin.com/in/sam-mosios',
   },
 
   resume: {

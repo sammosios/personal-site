@@ -2,9 +2,9 @@ import { PersonStanding, FileCodeCorner, MailIcon } from 'lucide-react';
 import type { HomeData } from '@/pages/Home/Home.schema';
 
 export const homeData: HomeData = {
-  heading: "Hi, I'm Βίσων 🦬",
+  heading: "Hi, I'm Sam",
   subheading:
-    'I enjoy building clean UIs and solving boring problems properly.',
+    'Many things keep me up at night... but my systems are not one of them.',
 
   actions: [
     {

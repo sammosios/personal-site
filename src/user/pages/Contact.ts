@@ -6,18 +6,18 @@ export const contactData: ContactData = {
   links: [
     {
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com',
+      value: 'sam.mosios@gmail.com',
+      href: 'mailto:sam.mosios@gmail.com',
     },
     {
       label: 'LinkedIn',
-      value: 'yourprofile',
-      href: 'https://linkedin.com/in/yourusername',
+      value: 'sam-mosios',
+      href: 'https://linkedin.com/in/sam-mosios',
     },
     {
       label: 'GitHub',
-      value: 'yourusername',
-      href: 'https://github.com/yourusername',
+      value: 'sammosios',
+      href: 'https://github.com/sammosios',
     },
   ],
 };
