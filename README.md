@@ -1,16 +1,51 @@
-# React + Vite
+# Portfolio Template
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A forkable personal portfolio template built with **React**, **Vite**, and **TypeScript**.
 
-Currently, two official plugins are available:
+## Purpose
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Serve as a reusable portfolio foundation
+- Separate **content from presentation**
+- Allow customization via typed data, not component edits
 
-## React Compiler
+## Core ideas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Pages render from **user-defined data**
+- Each page owns its **schema and layout**
+- Forks update content while sharing the same codebase
+- TypeScript enforces structure and prevents breakage
 
-## Expanding the ESLint configuration
+## Tech
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- Vite
+- TypeScript
+- React Router
+- CSS (global styles + component modules)
+
+## Customization
+
+Edit files in `src/user/` to:
+
+- change text
+- add blocks
+- update links
+- control page content
+
+No component changes required.
+
+## Development
+
+```bash
+npm install
+npm run dev
+```
+
+## Deployment
+
+The static page can be easily deployed to Github Pages:
+
+```bash
+npm install
+npm run deploy
+```
